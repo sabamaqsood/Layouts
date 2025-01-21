@@ -3,7 +3,7 @@ body{
     padding: 0;
     position: relative;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 14px;
     color: #505050;
 
 }
@@ -69,3 +69,94 @@ background-color: var(--primary--color);
     border-bottom-right-radius: 15px;
 }
 
+.article a{
+    color: #6e4ebd;
+}
+.circle{
+    width: 25px;
+    height: 25px;
+    background-color:#6e4ebd;
+}
+.div-img{
+    height: 350px;
+    max-height: 350px;
+    object-fit: fill;
+}
+.round{
+    width: 132px;
+    height: 132px;
+    max-width: 132px;
+}
+
+.ribbon{
+
+    background-color: #00245e;
+   width: 130px;
+    height: 36px;
+}
+ 
+.ribbon::before{
+    border: 18px solid #00245e;
+    border-left: 0;
+    border-right: 18px solid transparent;
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 30px;
+    height: 30px;
+    content: '';
+    z-index: 1;
+}
+
+.ribbon::after{
+    border: 18px solid #00245e;
+    border-right: 0;
+    border-left: 18px solid transparent;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 30px;
+    height: 30px;
+    content: '';
+    z-index: 1;
+}
+
+.banner{
+    background-color: #d2edeb;
+}
+
+@media(max-width:767px){
+    .main-head{
+        font-size: 25px;
+    }
+    .round{
+        width: 80px;
+        height: 80px;
+    }
+}
+.bg-box{
+    background-color: #f1f4f7;
+}
+
+.round{
+    transform: translateY(-40%);
+}
+
+.card-coupon span{
+    color: #2e557c;
+}
+.card-coupon{
+    /* border-style: dashed; */
+    border: 1px dashed;
+    border-color: #2e557c;
+}
+.list-unstyled  li{
+    /* width: 100%; */
+    /* white-space: nowrap; */
+}
+.button-2:hover{
+    background-color: #8fcaf9;
+    .button_arrow{
+        transform: translateX(4px);
+    }
+}
