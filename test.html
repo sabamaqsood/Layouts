@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        .vertical-text {
+    writing-mode: vertical-rl; /* or 'vertical-lr' depending on the direction */
+    transform: rotate(180deg); /* Optional: rotates the text to read from bottom to top */
+    text-align: center; /* Optional: adjust the alignment of the text */
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.vertical-div {
+    writing-mode: vertical-rl; /* or vertical-lr for other direction */
+    height: 300px; /* Set the height of the div */
+    width: 50px; /* Set the width of the div */
+    border: 1px solid #000; /* Optional: add border for visibility */
+    padding: 10px;
+}
+
+    </style>
+<body>
+    
+    <div class="vertical-div d-flex justify-content-center">  
+         <div class="vertical-text text-center">
+      NewsLetter
+    </div>
+    </div>
+ 
+    
+</body>
+</html>
