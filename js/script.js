@@ -52,6 +52,7 @@ splides.forEach(function (splideElement) {
             575: {
                 pagination: true,
                 perPage: 1,
+                arrows:false,
             }
         }
     });

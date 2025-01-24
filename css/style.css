@@ -56,7 +56,7 @@ background-color: var(--primary--color);
   bottom: 0 !important;
 }
 .main-head{
-    font-size: 3rem;
+    font-size: 4rem;
 }
 .title{
     color: var(--primary--color);
@@ -202,10 +202,26 @@ footer
     color: var(--primary--color);
 }
 .footer-img{
-    width: 150px;
-    max-width: 150px;
+    width: 170px;
+    max-width: 170px;
 }
 .logo-img{
     width: 120px;
     max-width: 120px; 
 }
+.splide__pagination__page.is-active{
+    background-color: #000 !important ;
+}
+.splide__arrow{
+    background-color: transparent !important;
+    /* background: #000 !important; */
+}
+
+.splide__arrow--prev {
+    left: -40px; /* Push the left arrow outside */
+}
+
+.splide__arrow--next {
+    right: -40px; /* Push the right arrow outside */
+}
+

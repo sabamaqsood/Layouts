@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/bootstrap5.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Home</title>
 </head>
 
 <body>
-    <header>
+    <header class="bg-white">
         <nav class="navbar navbar-expand-md navbar-light border-bottom  shadow p-0">
             <div class="container">
                 <div class="col-12 col-md col-lg-auto d-flex justify-content-between">
@@ -40,7 +42,7 @@
                 <div class="col-12 pt-2 col-md-3 position-relative">
                     <div class="w-100 d-flex align-items-center shadow-sm rounded-3 px-2">
                         <input type="search" class="form-control w-100 shadow-none border-0" placeholder="Search">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1.2rem" height="1.2rem" fill="var(--primary-color)">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1.2rem" height="1.2rem" fill="#ff6600">
                             <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                         </svg>
                     </div>
@@ -88,7 +90,15 @@
 
             <div class="row mb-3">
                 <div class="col-12 my-3">
-                    <section class="splide" aria-label="Splide Basic HTML Example">
+                    <section class="splide" aria-label="Custom Arrows Example">
+                        <div class="splide__arrows">
+                              <button class="splide__arrow splide__arrow--prev">
+                                <i style='font-size:44px' class='fas'>&#xf0d9;</i>
+                              </button>
+                              <button class="splide__arrow splide__arrow--next">
+                                <i style='font-size:44px' class='fas'>&#xf0da;</i>
+                              </button>
+                        </div>
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide">
@@ -494,7 +504,15 @@
             <div class="row mb-3">
 
                 <div class="col-12 my-3">
-                    <section class="splide" aria-label="Splide Basic HTML Example">
+                    <section class="splide" aria-label="Custom Arrows Example">
+                        <div class="splide__arrows">
+                              <button class="splide__arrow splide__arrow--prev">
+                                <i style='font-size:44px' class='fas'>&#xf0d9;</i>
+                              </button>
+                              <button class="splide__arrow splide__arrow--next">
+                                <i style='font-size:44px' class='fas'>&#xf0da;</i>
+                              </button>
+                        </div>
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide">
@@ -899,7 +917,15 @@
             <div class="row mb-3">
 
                 <div class="col-12 my-3">
-                    <section class="splide" aria-label="Splide Basic HTML Example">
+                    <section class="splide" aria-label="Custom Arrows Example">
+                        <div class="splide__arrows">
+                              <button class="splide__arrow splide__arrow--prev">
+                                <i style='font-size:44px' class='fas'>&#xf0d9;</i>
+                              </button>
+                              <button class="splide__arrow splide__arrow--next">
+                                <i style='font-size:44px' class='fas'>&#xf0da;</i>
+                              </button>
+                        </div>
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide">
@@ -1546,7 +1572,7 @@
 
             <div class="container py-3 d-flex align-items-center flex-column text-white">
 
-                <div class="col-lg-3 col-md-4 col-sm-8 col-10 mb-md-3 d-flex justify-content-center">
+                <div class="col-lg-3 col-md-4 col-sm-8 col-10 d-flex justify-content-center">
                     <a href="">
 
                         <img src="assets/images/logo.png" class="img-fluid footer-img" alt="">
@@ -1558,49 +1584,49 @@
                         Dolore officiis repudiandae laudantium. Neque soluta perspiciatis repudiandae debitis, earum eum commodi facilis quod placeat molestias dolor dolorem voluptas quo similique nisi quia sit aut.
                     </p>
 
-                    <div class="w-100">
-                        <ul class="list-unstyled d-lg-flex justify-content-center gap-5 footer d-block">
+                    <div class="w-100 justify-content-center d-flex">
+                        <ul class="list-unstyled d-lg-flex justify-content-center gap-5 footer d-block ">
                             <li class="d-flex gap-1">
                           <a href=""><img src="assets/images/Capture1.PNG" alt="" class="img-fluid iconimg"> </a>
-                          <a href="" class="text-capitalize text-decoration-none text-white my-3  fw-bold fs-5">Mattress</a>
+                          <a href="" class="text-capitalize text-decoration-none text-white my-4  fw-bold fs-5">Mattress</a>
                             </li>
                             <li class="d-flex gap-1">
                                 <a href=""><img src="assets/images/Capture-2.PNG" alt="" class="img-fluid iconimg"> </a>
-                                <a href="" class="text-capitalize text-decoration-none text-white  my-3 fw-bold fs-5">Mattress</a>
+                                <a href="" class="text-capitalize text-decoration-none text-white  my-4 fw-bold fs-5">Mattress</a>
                                   </li>
                                   <li class="d-flex gap-1">
                                     <a href=""><img src="assets/images/Capture3.PNG" alt="" class="img-fluid iconimg"> </a>
-                                    <a href="" class="text-capitalize text-decoration-none text-white my-3  fw-bold fs-5">Mattress</a>
+                                    <a href="" class="text-capitalize text-decoration-none text-white my-4  fw-bold fs-5">Mattress</a>
                                       </li>
                         </ul>
                     </div>
                 </div>
            
                 <div class="text-center text-white-50">
-                    <p class="mb-1">Copyright &copy; 2025, All rights reseved, Designed by ReviewRiseup</p>
+                    <p class="mb-1 small">Copyright &copy; 2025, All rights reseved, Designed by ReviewRiseup</p>
                     <ul class="d-flex gap-3 justify-content-center fw-semibold flex-wrap p-0" id="footer-links">
                         <li class="list-unstyled">
-                            <a href="#" class="text-decoration-none text-white">
+                            <a href="#" class="text-decoration-none text-white fs-6">
                                 Terms
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="text-decoration-none text-white">
+                            <a href="#" class="text-decoration-none text-white fs-6">
                                 Privacy Policy
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="text-decoration-none text-white">
+                            <a href="#" class="text-decoration-none text-white fs-6">
                                 Disclamer
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="text-decoration-none text-white">
+                            <a href="#" class="text-decoration-none text-white fs-6">
                                 Contact Us
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="text-decoration-none text-white">
+                            <a href="#" class="text-decoration-none text-white fs-6">
                                 About Us
                             </a>
                         </li>
