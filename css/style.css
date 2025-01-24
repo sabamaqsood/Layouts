@@ -197,6 +197,7 @@ footer
     width: 50px;
     background-color: var(--secondary--color);
     transform: translate(0,-27%);
+    cursor: pointer;
 }
 .nav-item{
     color: var(--primary--color);
@@ -225,3 +226,54 @@ footer
     right: -40px; /* Push the right arrow outside */
 }
 
+.newsletter-box {
+
+    right: -300px; /* Start off-screen to the right */
+    bottom: 30%; /* Align it to the bottom of the parent */
+    width: 300px;
+    max-width: 300px;
+    background-color: #f4f4f4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    opacity: 0; /* Start fully transparent */
+    transform: translateX(100%); /* Start off-screen to the right */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth slide and fade */
+
+  }
+  
+  /* When the box is visible */
+  .newsletter-box.visible {
+    right: 0; /* Slide into view */
+    opacity: 1; /* Fully visible */
+    transform: translateX(0); /* Reset to its original position */
+  }
+  
+  
+  
+.div_form{
+max-width: 230px;
+width: 230px;
+}
+  
+@media (max-width:375px){
+    .newsletter-box{
+        bottom: 40%;
+    }
+}
+@media (min-width: 376px) and (max-width: 767px) {
+    .newsletter-box {
+      bottom: 45%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 990px) {
+    .newsletter-box {
+      bottom: 20%;
+    }
+  }
+  
+  .bg-btn{
+    color: #fff;
+    background-color: var(--secondary--color);
+    border: none;
+    
+  }

@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <header class="bg-white">
-        <nav class="navbar navbar-expand-md navbar-light border-bottom  shadow p-0">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light border-bottom  shadow">
             <div class="container">
                 <div class="col-12 col-md col-lg-auto d-flex justify-content-between">
                     <a href="#" class="d-flex justify-content-center">
@@ -1562,13 +1562,29 @@
 
     </section>
     <footer>
-        <div class="position-relative">
+      <div class="position-relative overflow-hidden w-100">
 
-            <div class="vertical-div d-flex justify-content-center position-absolute end-0 bottom-0 p-2">  
-                <div class="vertical-text text-center fw-bold fs-4 text-uppercase text-white">
-             NewsLetter
-           </div>
-           </div>
+            <div class="vertical-div d-flex justify-content-center position-absolute end-0 bottom-0 p-2 rounded-start-2 z-1"
+            onclick="toggleNewsletter()"
+          >
+            <div class="vertical-text text-center fw-bold fs-4 text-uppercase text-white">
+              Newsletter
+            </div>
+          </div>
+        
+          <!-- Hidden Subscribe Box -->
+          <div id="newsletterBox" class="newsletter-box position-absolute  p-2  end-0">
+            <p class="fs-6 fw-bold ps-2 text-dark">Subscribe to our Newsletter</p>
+            <form action="" class="d-flex justify-content-center div_form">
+
+                <input type="email" placeholder="Enter your email" class="form-control  p-0 px-2"/>
+              
+            </form>
+            <div class="d-flex justify-content-center py-2 pe-3">
+    
+                <button type="submit" class="bg-btn">Submit</button>
+            </div>
+          </div>
 
             <div class="container py-3 d-flex align-items-center flex-column text-white">
 
@@ -1588,15 +1604,15 @@
                         <ul class="list-unstyled d-lg-flex justify-content-center gap-5 footer d-block ">
                             <li class="d-flex gap-1">
                           <a href=""><img src="assets/images/Capture1.PNG" alt="" class="img-fluid iconimg"> </a>
-                          <a href="" class="text-capitalize text-decoration-none text-white my-4  fw-bold fs-5">Mattress</a>
+                          <a href="" class="text-capitalize text-decoration-none text-white my-4  fw-bold fs-4 ps-2">Mattress</a>
                             </li>
                             <li class="d-flex gap-1">
-                                <a href=""><img src="assets/images/Capture-2.PNG" alt="" class="img-fluid iconimg"> </a>
-                                <a href="" class="text-capitalize text-decoration-none text-white  my-4 fw-bold fs-5">Mattress</a>
+                                <a href=""><img src="assets/images/Capture-2.png" alt="" class="img-fluid iconimg"> </a>
+                                <a href="" class="text-capitalize text-decoration-none text-white  my-4 fw-bold fs-4 ps-2">Mattress</a>
                                   </li>
                                   <li class="d-flex gap-1">
                                     <a href=""><img src="assets/images/Capture3.PNG" alt="" class="img-fluid iconimg"> </a>
-                                    <a href="" class="text-capitalize text-decoration-none text-white my-4  fw-bold fs-5">Mattress</a>
+                                    <a href="" class="text-capitalize text-decoration-none text-white my-4  fw-bold fs-4 ps-2">Mattress</a>
                                       </li>
                         </ul>
                     </div>

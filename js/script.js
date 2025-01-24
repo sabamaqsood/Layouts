@@ -58,3 +58,22 @@ splides.forEach(function (splideElement) {
     });
     splide.mount();
 });
+
+function toggleNewsletter() {
+    const newsletterBox = document.getElementById('newsletterBox');
+  
+    if (newsletterBox.classList.contains('visible')) {
+  
+      newsletterBox.classList.remove('visible');
+      setTimeout(() => {
+        newsletterBox.style.display = 'none'; 
+      }, 300); 
+    } else {
+    
+      newsletterBox.style.display = 'block';
+      setTimeout(() => {
+        newsletterBox.classList.add('visible');
+      }, 0); 
+    }
+  }
+  
