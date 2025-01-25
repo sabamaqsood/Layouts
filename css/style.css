@@ -133,9 +133,7 @@ background-color: var(--primary--color);
         width: 80px;
         height: 80px;
     }
-    .vertical-div{
-        transform: translate(0,-100%) !important;
-    }
+   
 }
 .bg-box{
     background-color: #f1f4f7;
@@ -193,23 +191,23 @@ footer
 
 .vertical-div {
     writing-mode: vertical-rl;
-    height: 270px;
+    height: 271px;
     width: 50px;
     background-color: var(--secondary--color);
-    transform: translate(0,-27%);
+    bottom: 16%;
     cursor: pointer;
 }
 .nav-item{
     color: var(--primary--color);
 }
-.footer-img{
-    width: 170px;
-    max-width: 170px;
-}
-.logo-img{
-    width: 120px;
-    max-width: 120px; 
-}
+/*.footer-img{*/
+/*    width: 200px;*/
+/*    max-width: 200px;*/
+/*}*/
+/*.logo-img{*/
+/*    width: 120px;*/
+/*    max-width: 120px; */
+/*}*/
 .splide__pagination__page.is-active{
     background-color: #000 !important ;
 }
@@ -229,10 +227,11 @@ footer
 .newsletter-box {
 
     right: -300px; /* Start off-screen to the right */
-    bottom: 30%; /* Align it to the bottom of the parent */
+    bottom: 16%; /* Align it to the bottom of the parent */
     width: 300px;
+    height: 271px;
     max-width: 300px;
-    background-color: #f4f4f4;
+    background-color: var(--secondary--color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     opacity: 0; /* Start fully transparent */
     transform: translateX(100%); /* Start off-screen to the right */
@@ -251,29 +250,39 @@ footer
   
 .div_form{
 max-width: 230px;
-width: 230px;
+width: 230px !important;
 }
   
 @media (max-width:375px){
     .newsletter-box{
-        bottom: 40%;
+        bottom: 30%;
+    }
+    .vertical-div{
+        bottom: 30%;
     }
 }
 @media (min-width: 376px) and (max-width: 767px) {
     .newsletter-box {
-      bottom: 45%;
+      bottom: 32%;
     }
+    .vertical-div {
+        bottom: 32%;
+      }
   }
   
   @media (min-width: 768px) and (max-width: 990px) {
     .newsletter-box {
       bottom: 20%;
     }
+
+    .vertical-div{
+        bottom: 20%;
+      }
   }
   
   .bg-btn{
-    color: #fff;
-    background-color: var(--secondary--color);
-    border: none;
+ 
+    background-color: var(--primary--color);
+
     
   }
