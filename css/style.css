@@ -300,3 +300,10 @@ width: 230px !important;
     /* display: block; */
     padding: 10px;
   }
+
+  .nav-tabs .active {
+    border-bottom: 3px solid var(--secondary--color);
+}
+.store-nav-tabs {
+    gap: 10px;
+}
