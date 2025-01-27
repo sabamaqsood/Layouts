@@ -147,7 +147,7 @@ background-color: var(--primary--color);
     color: #2e557c;
 }
 .card-coupon{
-    /* border-style: dashed; */
+
     border: 1px dashed;
     border-color: #2e557c;
 }
@@ -186,13 +186,14 @@ footer
 .vertical-text {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    white-space: nowrap; /* Prevents text from wrapping */
+        letter-spacing: 2px;
+    white-space: nowrap; 
 }
 
 .vertical-div {
     writing-mode: vertical-rl;
     height: 271px;
-    width: 50px;
+    width: 42px;
     background-color: var(--secondary--color);
     bottom: 16%;
     cursor: pointer;
@@ -200,20 +201,13 @@ footer
 .nav-item{
     color: var(--primary--color);
 }
-/*.footer-img{*/
-/*    width: 200px;*/
-/*    max-width: 200px;*/
-/*}*/
-/*.logo-img{*/
-/*    width: 120px;*/
-/*    max-width: 120px; */
-/*}*/
+
 .splide__pagination__page.is-active{
     background-color: #000 !important ;
 }
 .splide__arrow{
     background-color: transparent !important;
-    /* background: #000 !important; */
+
 }
 
 .splide__arrow--prev {
@@ -226,11 +220,11 @@ footer
 
 .newsletter-box {
 
-    right: -300px; /* Start off-screen to the right */
-    bottom: 16%; /* Align it to the bottom of the parent */
-    width: 300px;
+    right: -300px; 
+    bottom: 16%; 
+    width: 100%;
     height: 271px;
-    max-width: 300px;
+    max-width: 350px;
     background-color: var(--secondary--color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     opacity: 0; /* Start fully transparent */
@@ -284,5 +278,25 @@ width: 230px !important;
  
     background-color: var(--primary--color);
 
-    
+  }
+  
+  .div_form input{
+      outline:0 !important;
+      box-shadow:none !important;
+  }
+  
+  @media(max-width:767px){
+      .newsletter-box p{
+          font-size:15px !important;
+      }
+  }
+  .blog-div{
+    margin-top: -10%;
+  }
+  .blog_content p::after{
+    content: '| ';
+    width: 20px;
+    height: 20px;
+    /* display: block; */
+    padding: 10px;
   }
