@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /cart/
+Disallow: /offers/
+Disallow: /Feedback/
+Allow: /songs/
+Allow: /albums/
+Allow: /trending songs/
+Allow: /new releases/
