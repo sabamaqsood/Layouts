@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Blog</title>
+</head>
+
+<body>
+    <button id="btnScrollToTop" aria-label="button" class="position-fixed border-0 rounded-pill bg-dark">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="1.5rem" height="1.5rem" fill="#47807d">
+        <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>
+           </button>
+    <header>
+        <div class="border-bottom  shadow py-3 position-relative">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-lg-12 ">
+
+                        <a class="navbar-brand d-flex justify-content-center text-uppercase text-decoration-none"
+                            href="#">
+                            <div>THE</div>
+                            <div class="ever">EVERGREEN</div>
+                            <div>ESSENTIALS</div>
+                        </a>
+                    </div>
+
+
+                    <nav class="navbar navbar-expand-lg navbar-light ">
+
+                        <div class="container">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse col-auto order-1" id="navbarSupportedContent">
+                                <ul class="navbar-nav mx-auto mt-2 mt-lg-0 fw-semibold nav nav-tabs border-0 w-100 justify-content-center">
+                                    <li class="nav-item">
+                                        <a class="nav-link active fw-bold  rounded-0 fs-6" data-bs-toggle="tab" href="#">Home and Decor</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link fw-bold  rounded-0 fs-6" data-bs-toggle="tab" href="#">Home and Decor</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link fw-bold  rounded-0 fs-6" data-bs-toggle="tab" href="#">Home and Decor</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link fw-bold  rounded-0 fs-6" data-bs-toggle="tab" href="#">Home and Decor</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link fw-bold  rounded-0 fs-6" data-bs-toggle="tab" href="#">Home and Decor</a>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                            <div class="position-relative order-lg-last">
+                                <div class="d-flex align-items-center px-3 py-2 search-box" id="search-icon">
+                                    <!-- <input type="search" class="form-control w-100 shadow-none border-0" placeholder="Search"> -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1.2rem"
+                                        height="1.2rem" fill="#fff">
+                                        <path
+                                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </nav>
+                     <div id="search-card" class="card p-0  d-none mx-auto border-0 rounded-0 position-relative d-flex justify-content-center align-items-center align-content-center ">
+                    
+                          
+                                <div class="w-100">
+                               
+                                        <input type="search" class="form-control py-3" placeholder="Search...">
+                                </div>
+                            
+                                    <div class="position-absolute w-100 top-100 start-0 shadow bg-white z-1 mx-auto d-none">
+                                        <ul class="list-group list-unstyled gap-1 p-1 overflow-y-scroll" style="max-height: 250px;">
+                                            <li>
+                                                <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                          
+                        </div>
+                   
+                </div>
+
+            </div>
+        </div>
+    </header>
+<main class="pb-5">
+    <section class="">
+        <div class="container">
+            <div class="text-uppercase pt-3 fw-bold categ-title text-center mb-5 my-3">home & garden stores</div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6 my-4 col-6">
+                    <a href="#" class="nav-link position-relative d-flex justify-content-center align-items-center" data-pzz="false">
+                        <div class="position-absolute bg-01 py-lg-3 fw-semibold px-lg-3 px-2 text-white text-center top-0 categ-single-div ">
+                            Jewelry & Watches
+                        </div>
+                       <div class=" shadow">
+                            <img src="assets/images/cate-img.PNG" class="w-100 h-100 img-fluid" alt="...">
+                        </div>
+                    </a>
+               
+            </div>
+                <div class="col-lg-3 col-sm-6 my-4 col-6">
+                    <a href="#" class="nav-link position-relative d-flex justify-content-center align-items-center" data-pzz="false">
+                        <div class="position-absolute bg-01 py-lg-3 fw-semibold px-lg-3 px-2 text-white text-center top-0 categ-single-div ">
+                            Jewelry & Watches
+                        </div>
+                       <div class=" shadow">
+                            <img src="assets/images/cate-img.PNG" class="w-100 h-100 img-fluid" alt="...">
+                        </div>
+                    </a>
+               
+            </div>
+                <div class="col-lg-3 col-sm-6 my-4 col-6">
+                    <a href="#" class="nav-link position-relative d-flex justify-content-center align-items-center" data-pzz="false">
+                        <div class="position-absolute bg-01 py-lg-3 fw-semibold px-lg-3 px-2 text-white text-center top-0 categ-single-div ">
+                            Jewelry & Watches
+                        </div>
+                       <div class=" shadow">
+                            <img src="assets/images/cate-img.PNG" class="w-100 h-100 img-fluid" alt="...">
+                        </div>
+                    </a>
+               
+            </div>
+                <div class="col-lg-3 col-sm-6 my-4 col-6">
+                    <a href="#" class="nav-link position-relative d-flex justify-content-center align-items-center" data-pzz="false">
+                        <div class="position-absolute bg-01 py-lg-3 fw-semibold px-lg-3 px-2 text-white text-center top-0 categ-single-div ">
+                            Jewelry & Watches
+                        </div>
+                       <div class=" shadow">
+                            <img src="assets/images/cate-img.PNG" class="w-100 h-100 img-fluid" alt="...">
+                        </div>
+                    </a>
+               
+            </div>
+                <div class="col-lg-3 col-sm-6 my-4 col-6">
+                    <a href="#" class="nav-link position-relative d-flex justify-content-center align-items-center" data-pzz="false">
+                        <div class="position-absolute bg-01 py-lg-3 fw-semibold px-lg-3 px-2 text-white text-center top-0 categ-single-div ">
+                            Jewelry & Watches
+                        </div>
+                       <div class=" shadow">
+                            <img src="assets/images/cate-img.PNG" class="w-100 h-100 img-fluid" alt="...">
+                        </div>
+                    </a>
+               
+            </div>
+                <div class="col-lg-3 col-sm-6 my-4 col-6">
+                    <a href="#" class="nav-link position-relative d-flex justify-content-center align-items-center" data-pzz="false">
+                        <div class="position-absolute bg-01 py-lg-3 fw-semibold px-lg-3 px-2 text-white text-center top-0 categ-single-div ">
+                            Jewelry & Watches
+                        </div>
+                       <div class=" shadow">
+                            <img src="assets/images/cate-img.PNG" class="w-100 h-100 img-fluid" alt="...">
+                        </div>
+                    </a>
+               
+            </div>
+                <div class="col-lg-3 col-sm-6 my-4 col-6">
+                    <a href="#" class="nav-link position-relative d-flex justify-content-center align-items-center" data-pzz="false">
+                        <div class="position-absolute bg-01 py-lg-3 fw-semibold px-lg-3 px-2 text-white text-center top-0 categ-single-div ">
+                            Jewelry & Watches
+                        </div>
+                       <div class=" shadow">
+                            <img src="assets/images/cate-img.PNG" class="w-100 h-100 img-fluid" alt="...">
+                        </div>
+                    </a>
+               
+            </div>
+                <div class="col-lg-3 col-sm-6 my-4 col-6">
+                    <a href="#" class="nav-link position-relative d-flex justify-content-center align-items-center" data-pzz="false">
+                        <div class="position-absolute bg-01 py-lg-3 fw-semibold px-lg-3 px-2 text-white text-center top-0 categ-single-div ">
+                            Jewelry & Watches
+                        </div>
+                       <div class=" shadow">
+                            <img src="assets/images/cate-img.PNG" class="w-100 h-100 img-fluid" alt="...">
+                        </div>
+                    </a>
+               
+            </div>
+                <div class="col-lg-3 col-sm-6 my-4 col-6">
+                    <a href="#" class="nav-link position-relative d-flex justify-content-center align-items-center" data-pzz="false">
+                        <div class="position-absolute bg-01 py-lg-3 fw-semibold px-lg-3 px-2 text-white text-center top-0 categ-single-div ">
+                            Jewelry & Watches
+                        </div>
+                       <div class=" shadow">
+                            <img src="assets/images/cate-img.PNG" class="w-100 h-100 img-fluid" alt="...">
+                        </div>
+                    </a>
+               
+            </div>
+                <div class="col-lg-3 col-sm-6 my-4 col-6">
+                    <a href="#" class="nav-link position-relative d-flex justify-content-center align-items-center" data-pzz="false">
+                        <div class="position-absolute bg-01 py-lg-3 fw-semibold px-lg-3 px-2 text-white text-center top-0 categ-single-div ">
+                            Jewelry & Watches
+                        </div>
+                       <div class=" shadow">
+                            <img src="assets/images/cate-img.PNG" class="w-100 h-100 img-fluid" alt="...">
+                        </div>
+                    </a>
+               
+            </div>
+                <div class="col-lg-3 col-sm-6 my-4 col-6">
+                    <a href="#" class="nav-link position-relative d-flex justify-content-center align-items-center" data-pzz="false">
+                        <div class="position-absolute bg-01 py-lg-3 fw-semibold px-lg-3 px-2 text-white text-center top-0 categ-single-div ">
+                            Jewelry & Watches
+                        </div>
+                       <div class=" shadow">
+                            <img src="assets/images/cate-img.PNG" class="w-100 h-100 img-fluid" alt="...">
+                        </div>
+                    </a>
+               
+            </div>
+                <div class="col-lg-3 col-sm-6 my-4 col-6">
+                    <a href="#" class="nav-link position-relative d-flex justify-content-center align-items-center" data-pzz="false">
+                        <div class="position-absolute bg-01 py-lg-3 fw-semibold px-lg-3 px-2 text-white text-center top-0 categ-single-div ">
+                            Jewelry & Watches
+                        </div>
+                       <div class=" shadow">
+                            <img src="assets/images/cate-img.PNG" class="w-100 h-100 img-fluid" alt="...">
+                        </div>
+                    </a>
+               
+            </div>
+                <div class="col-lg-3 col-sm-6 my-4 col-6">
+                    <a href="#" class="nav-link position-relative d-flex justify-content-center align-items-center" data-pzz="false">
+                        <div class="position-absolute bg-01 py-lg-3 fw-semibold px-lg-3 px-2 text-white text-center top-0 categ-single-div ">
+                            Jewelry & Watches
+                        </div>
+                       <div class=" shadow">
+                            <img src="assets/images/cate-img.PNG" class="w-100 h-100 img-fluid" alt="...">
+                        </div>
+                    </a>
+               
+            </div>
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <div class=" w-100 position-relative">
+        <div class="vertical-div d-flex justify-content-center position-absolute end-0 rounded-start-2 overflow-hidden bg-01"
+            onclick="toggleNewsletter()">
+            <div class="vertical-text text-center fw-bold fs-4 text-uppercase text-white mx-auto">
+                Newsletter
+            </div>
+        </div>
+
+        <!-- Hidden Subscribe Box -->
+        <div id="newsletterBox"
+            class="newsletter-box position-absolute card  p-2 rounded-start-2 end-0 border-0 z-1 bg-01 ">
+            <div class="d-flex justify-content-center pt-3">
+                <p class="fs-5 fw-bold text-center text-white text-capitalize form-text mx-auto">Subscribe to our
+                    Newsletter</p>
+            </div>
+            <form action="" class="d-flex justify-content-center div_form mx-auto">
+
+                <input type="email" placeholder="Enter your email" class="p-2 px-2 rounded-pill border-0 w-100" />
+
+            </form>
+            <div class="d-flex justify-content-center py-4 pe-3">
+
+                <button type="submit"
+                    class="bg-01 border-0 text-white py-2 px-4 rounded-2 fw-bold shadow">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="position-relative ">
+            <div class="w-100 d-flex justify-content-center mb-lg-0 mb-5">
+                <div
+                    class="text-center bg-01 py-lg-3 px-lg-3 py-2 px-2 position-absolute d-flex flex-column justify-content-center align-items-center mx-auto logo_div">
+                    <h2 class="text-uppercase text-white mb-0">the evergreen essentials</h2>
+                    <p class="text-white mb-0 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elite Lorem ipsum dolor sit amet consectetur adipisicing elite</p>
+                </div>
+            </div>
+            <ul
+                class="list-unstyled d-flex justify-content-lg-start justify-content-center align-items-center  pt-5 pt-lg-3 gap-2 ps-lg-5">
+                <li class="socials-links rounded-pill  bg-01 d-flex justify-content-center align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#fff" width="25px"
+                        height="25px" class="mx-auto">
+                        <path
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                    </svg>
+                </li>
+                <li class="socials-links rounded-pill  bg-01 d-flex justify-content-center align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="#fff" width="20px"
+                        height="20px" class="mx-auto">
+                        <path
+                            d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                    </svg>
+                </li>
+            </ul>
+            <div class="w-100 d-flex justify-content-center links">
+                <ul class="list-unstyled d-lg-flex gap-4 justify-content-center position-relative py-2">
+                    <li><a href=""
+                            class="text-white text-decoration-none text-capitalize fs-4 fw-semibold">about</a></li>
+                    <li><a href=""
+                            class="text-white text-decoration-none text-capitalize fs-4 fw-semibold">about</a></li>
+                    <li><a href=""
+                            class="text-white text-decoration-none text-capitalize fs-4 fw-semibold">about</a></li>
+                    <li><a href=""
+                            class="text-white text-decoration-none text-capitalize fs-4 fw-semibold">about</a></li>
+                    <li><a href=""
+                            class="text-white text-decoration-none text-capitalize fs-4 fw-semibold">about</a></li>
+                </ul>
+
+            </div>
+            <div class="text-center text-white">
+                <p>2025 all Rights Reserved.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex doloremque reprehenderit libero
+                    magnam aut iure.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="js/bootstrap.js"> </script>
+<script src="js/script.js"> </script>
+<script src="js/jquery.js"> </script>
+</body>
+
+</html>
