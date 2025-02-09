@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-1/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootsrtrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="text-center text-lg-start d-block d-lg-flex container">
+                <a class="order-2 order-lg-1 navbar-brand" href="#">
+                    <img src="images/speedyverdict-logo.PNG" width="200" height="72" alt="img" class="img-fluid">
+                </a>
+                <button
+                    class="order-3 order-lg-5 position-absolute navbar-toggler px-0 outline-none shadow-none border-0"
+                    type="button" style="top: 26px;right:12px;" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="30" height="30" fill="white">
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z">
+                        </path>
+                    </svg>
+
+                </button>
+                <div class="order-1 order-lg-4 position-absolute d-lg-none d-block" style="top: 33px;left:12px;">
+                    <button class="btn border-0 p-0 m-0 outline-none shadow-none" aria-label="searchIcon"
+                        data-bs-toggle="collapse" data-bs-target="#collapseSearch" aria-expanded="false"
+                        aria-controls="collapseSearch">
+                        <svg class="navbar-search" width="24" height="25" viewBox="0 0 67 61" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="37" cy="25" r="24" stroke="#fff" stroke-width="7"></circle>
+                            <line x1="1.29289" y1="59.6482" x2="18.9706" y2="41.9706" stroke="#fff" stroke-width="7">
+                            </line>
+                        </svg>
+                    </button>
+                </div>
+                <div class="order-4 order-lg-2 collapse navbar-collapse justify-content-center"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-start">
+                        <li class="nav-item">
+                            <a class="nav-link navbar-links" href="#">navbar-links</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-links" href="#">navbar-links</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-links" href="#">navbar-links</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-links" href="#">navbar-links</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-links" href="#">navbar-links</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="collapse order-5 order-lg-3 my-2 my-lg-0 d-lg-block" id="collapseSearch">
+                    <div class="search position-relative">
+                        <input type="text" class="ps-3 search-input w-100 p-2 rounded-3 form-control"
+                            placeholder="Search" name="" style="min-width: 280px;">
+                        <span class="position-absolute w-fit-content top-0 bottom-0 fs-4 search-icon end-0 me-3">
+                            <svg class="navbar-search" width="24" height="25" viewBox="0 0 67 61" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="37" cy="25" r="24" stroke="#940844" stroke-width="7"></circle>
+                                <line x1="1.29289" y1="59.6482" x2="18.9706" y2="41.9706" stroke="#940844"
+                                    stroke-width="7">
+                                </line>
+                            </svg>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </header>
+<main>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0">
+        <div class="d-flex justify-content-end">
+            <div class="rounded-pill shadow circle-modal  me-2 mt-2 z-1">
+                <button type="button" class="btn-close pt-3 px-2 p-0" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+        </div>
+       
+        <div class="modal-header d-block p-0 px-3 border-0">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="">
+                    <h2 class="modal-title text-color text-capitalize fw-bold fs-1" id="exampleModalLabel">subscribe!</h2>
+                    <h3 class="fs-6"><i>write your e-mail address and receive all news from us!</i></h3>
+                   </div>
+                </div>
+                <div class="col-lg-5 position-relative">
+                    <div class="position-absolute end-0 bottom-0  div-subs">
+                        <img src="images/envelope.png" alt="" class="img-fluid envelope pb-3 ">
+
+                    </div>
+                </div>
+                <div class="col-12">
+                    <form action="">
+                        <input type="text" class="form-control rounded-0 mb-2 p-2" placeholder="e-mail address">
+                        <button class="btn w-100 bg text-white text-capitalize mt-2 mb-2 fw-bold fs-4 rounded-0"> subscribe</button>
+                        <div>
+                            <div class="d-flex justify-content-start text-dark mb-3">
+                                <div class="form-check col-md-auto col-11">
+                                    <input class="form-check-input shadow-none" type="checkbox" id="consent-02" name="is_consent">
+                                    <label class="form-check-label small" for="consent-02">
+                                        I agree to terms and Privacy Policy
+                                 
+                                    </label>
+                                </div>
+                            </div>
+                                    </div>
+                    </form>
+                </div>
+            </div>
+ 
+   
+        </div>
+      
+    
+      </div>
+    </div>
+  </div>
+
+  <div class="card shadow cookie-alert position-fixed rounded-5 m-5 end-0  border-0 bg-light">
+    <div class="card-body rounded-2 text-center">
+        <img src="images/cookies.png" alt="" class="img-fluid">
+      <h4 class="card-text text-color  text-capitalize fw-bold">we use cookies</h4>
+      <p class="text-color small fw-semibold">we use cookies to ensure our website function properly and to provide you with a personalized experience</p>
+      <div class="gap-3 d-flex justify-content-center">
+          <button onclick="acceptCookies(1)" class="btn  accept-cookies bg rounded-4 border-0 text-white py-2 fw-bold px-3">Accept</button>
+        <button onclick="acceptCookies(0)" class="btn accept-cookies bg rounded-4 border-0 text-white py-2 px-3 fw-bold">Reject</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+
+
+<script src="js/bootstrap.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

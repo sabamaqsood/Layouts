@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootsrtrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <style>
+        .splide__pagination__page {
+            transform: scale(1.4);
+            background: var(--primary-color);
+        }
+
+        .splide__pagination__page.is-active {
+            background: black;
+        }
+    </style>
+</head>
+<body>
+    <button id="btnScrollToTop" aria-label="button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="1rem" height="1rem" fill="#fff">
+        <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>
+           </button>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="text-center text-lg-start d-block d-lg-flex container">
+                <a class="order-2 order-lg-1 navbar-brand me-xxl-5 pe-xxl-4" href="#">
+                    <img src="images/speedyverdict-logo.PNG" width="200" height="72" alt="img"
+                        class="navbar-logo img-fluid">
+                </a>
+                <button
+                    class="order-3 order-lg-5 position-absolute navbar-toggler px-0 outline-none shadow-none border-0"
+                    type="button" style="top: 18px;right:12px;" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="30" height="30" fill="white">
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z">
+                        </path>
+                    </svg>
+
+                </button>
+                <div class="order-1 order-lg-4 position-absolute d-lg-none d-block" style="top: 22px;left:12px;">
+                    <button class="btn border-0 p-0 m-0 outline-none shadow-none" aria-label="searchIcon"
+                        data-bs-toggle="collapse" data-bs-target="#collapseSearch" aria-expanded="false"
+                        aria-controls="collapseSearch">
+                        <svg class="navbar-search" width="24" height="25" viewBox="0 0 67 61" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="37" cy="25" r="24" stroke="#fff" stroke-width="7"></circle>
+                            <line x1="1.29289" y1="59.6482" x2="18.9706" y2="41.9706" stroke="#fff" stroke-width="7">
+                            </line>
+                        </svg>
+                    </button>
+                </div>
+                <div class="order-4 order-lg-2 collapse navbar-collapse justify-content-center"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-start">
+                        <li class="nav-item">
+                            <a class="nav-link navbar-links" href="#">navbar-links</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-links" href="#">navbar-links</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-links" href="#">navbar-links</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-links" href="#">navbar-links</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-links" href="#">navbar-links</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="collapse order-5 order-lg-3 my-2 my-lg-0 d-lg-block" id="collapseSearch">
+                    <div class="search position-relative">
+                        <input type="text" class="ps-3 search-input w-100 p-2 rounded-3 form-control"
+                            placeholder="Search" name="" style="min-width: 280px;">
+                        <span class="position-absolute w-fit-content top-0 bottom-0 fs-4 search-icon end-0 me-3">
+                            <svg class="navbar-search" width="24" height="25" viewBox="0 0 67 61" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="37" cy="25" r="24" stroke="#940844" stroke-width="7"></circle>
+                                <line x1="1.29289" y1="59.6482" x2="18.9706" y2="41.9706" stroke="#940844"
+                                    stroke-width="7">
+                                </line>
+                            </svg>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main class="pb-5">
+        <section>
+            <div class="container">
+                <h1 class="py-3 text-capitalize text-center fw-bold text-main mb-0">
+                    Explore Season's Best Festival Haul
+                </h1>
+                <div class="row mt-2">
+                    <div class="col-12 col-xl-8">
+                        <section class="splide" aria-label="Basic Structure Example">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="pe-md-3">
+                                            <a href="#!">
+                                                <img src="images/home.jpg" height="560" alt="test"
+                                                    class="img-fluid w-100 object-fit-cover splider-image">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="pe-md-3">
+                                            <a href="#!">
+                                                <img src="images/home.jpg" height="560" alt="test"
+                                                    class="img-fluid w-100 object-fit-cover splider-image">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="pe-md-3">
+                                            <a href="#!">
+                                                <img src="images/home.jpg" height="560" alt="test"
+                                                    class="img-fluid w-100 object-fit-cover splider-image">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="pe-md-3">
+                                            <a href="#!">
+                                                <img src="images/home.jpg" height="560" alt="test"
+                                                    class="img-fluid w-100 object-fit-cover splider-image">
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <div class="mt-5 px-md-4 px-lg-1 px-xxl-5">
+                            <div class="row pe-xl-3 pe-xxl-0 justify-content-center justify-content-lg-start">
+                                <div class="col-4 px-0 px-xxl-3 mb-3">
+                                    <a href="#!" class="text-decoration-none">
+                                        <div class="px-2 px-xl-3 px-xxl-2 card-coupon-first">
+                                            <div class="position-relative z-1 text-center">
+                                                <img src="https://placeholder.co/200" width="200" height="150"
+                                                    class="shadow object-fit-cover" alt="">
+                                            </div>
+                                            <div
+                                                class="position-relative z-2 py-3 px-1 px-sm-4 px-lg-5 mx-lg-3 mx-xl-0 px-xl-4 invert-margin mb-2 mb-sm-3">
+                                                <div class="px-1 py-2 px-sm-3 px-lg-4 py-sm-3 bg text-center shadow-sm">
+                                                    <p class="mb-2 text-white lh-sm">Code</p>
+                                                    <p class="mb-3 text-white lh-sm ellipsy fw-semibold">Black Friday
+                                                        Deal! Get Up To 50% Off On Your Order</p>
+                                                    <p class="mb-0 text-white lh-sm">2025-12-31</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-4 px-0 px-xxl-3 mb-3">
+                                    <a href="#!" class="text-decoration-none">
+                                        <div class="px-2 px-xl-3 px-xxl-2 card-coupon-first">
+                                            <div class="position-relative z-1 text-center">
+                                                <img src="https://placeholder.co/200" width="200" height="150"
+                                                    class="shadow object-fit-cover" alt="">
+                                            </div>
+                                            <div
+                                                class="position-relative z-2 py-3 px-1 px-sm-4 px-lg-5 mx-lg-3 mx-xl-0 px-xl-4 invert-margin mb-2 mb-sm-3">
+                                                <div class="px-1 py-2 px-sm-3 px-lg-4 py-sm-3 bg text-center shadow-sm">
+                                                    <p class="mb-2 text-white lh-sm">Code</p>
+                                                    <p class="mb-3 text-white lh-sm ellipsy fw-semibold">Black Friday
+                                                        Deal! Get Up To 50% Off On Your Order</p>
+                                                    <p class="mb-0 text-white lh-sm">2025-12-31</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-4 px-0 px-xxl-3 mb-3">
+                                    <a href="#!" class="text-decoration-none">
+                                        <div class="px-2 px-xl-3 px-xxl-2 card-coupon-first">
+                                            <div class="position-relative z-1 text-center">
+                                                <img src="https://placeholder.co/200" width="200" height="150"
+                                                    class="shadow object-fit-cover" alt="">
+                                            </div>
+                                            <div
+                                                class="position-relative z-2 py-3 px-1 px-sm-4 px-lg-5 mx-lg-3 mx-xl-0 px-xl-4 invert-margin  mb-2 mb-sm-3">
+                                                <div class="px-1 py-2 px-sm-3 px-lg-4 py-sm-3 bg text-center shadow-sm">
+                                                    <p class="mb-2 text-white lh-sm">Code</p>
+                                                    <p class="mb-3 text-white lh-sm ellipsy fw-semibold">Black Friday
+                                                        Deal! Get Up To 50% Off On Your Order</p>
+                                                    <p class="mb-0 text-white lh-sm">2025-12-31</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl mt-4">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 col-xl-12">
+                                <div class="border-coupons mt-4 py-3 ms-xxl-1 mb-2">
+                                    <div class="mb-2 pe-xxl-3 pe-lg-1">
+                                        <a href="#!" class="text-decoration-none"><i
+                                                class="fw-semibold text-main mb-1">Loop
+                                                Earplug</i></a>
+                                        <a href="#!" class="text-decoration-none">
+                                            <h3 class="h3 text-dark fw-bold coupon-side-heads">Black Fiday Deal! Get Up
+                                                To
+                                                50%
+                                                Off
+                                                On Your Order</h3>
+                                        </a>
+                                    </div>
+                                    <div class="mb-2 pe-xxl-3 pe-lg-1">
+                                        <a href="#!" class="text-decoration-none"><i
+                                                class="fw-semibold text-main mb-1">Loop
+                                                Earplug</i></a>
+                                        <a href="#!" class="text-decoration-none">
+                                            <h3 class="h3 text-dark fw-bold coupon-side-heads">Black Fiday Deal! Get Up
+                                                To
+                                                50%
+                                                Off
+                                                On Your Order</h3>
+                                        </a>
+                                    </div>
+                                    <div class="mb-2 pe-xxl-3 pe-lg-1">
+                                        <a href="#!" class="text-decoration-none"><i
+                                                class="fw-semibold text-main mb-1">Loop
+                                                Earplug</i></a>
+                                        <a href="#!" class="text-decoration-none">
+                                            <h3 class="h3 text-dark fw-bold coupon-side-heads">Black Fiday Deal! Get Up
+                                                To
+                                                50%
+                                                Off
+                                                On Your Order</h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-7 col-md-5 col-lg-4 col-xl-12 trending-coupons-div">
+                                <h2 class="h4 py-3 text-capitalize text-center fw-bold text-main mb-0">
+                                    Trending Categories
+                                </h2>
+                                <div>
+                                    <div class="my-3">
+                                        <div class="flex-grow-1 row asp-09 mx-3 triangle 
+                                        position-relative">
+                                            <div class="col-6 px-0 trending-coupon"
+                                                style="height:180px; background: url(https://placeholder.co/500) no-repeat 100% / contain;">
+                                                <a href="#!"
+                                                    class="text-decoration-none w-100 h-100 d-block align-content-center">
+                                                    <div class="inner-diver d-none">
+                                                        <p
+                                                            class="fw-semibold text-center ms-xl-5 ps-xl-4 fs-4 mb-0 me-xl-4 lh-1 text-white">
+                                                            Auto Mobile</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-6 px-0 trending-coupon"
+                                                style="height:180px; background: url(https://placeholder.co/200) no-repeat 100% / contain;">
+                                                <a href="#!"
+                                                    class="text-decoration-none w-100 h-100 d-block align-content-center">
+                                                    <div class="inner-diver d-none">
+                                                        <p
+                                                            class="fw-semibold text-center me-xl-5 pe-xl-4 fs-4 mb-0 ms-xl-4 lh-1 text-white">
+                                                            Auto Mobile</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-6 px-0 trending-coupon"
+                                                style="height:180px; background: url(https://placeholder.co/200) no-repeat 100% / contain;">
+                                                <a href="#!"
+                                                    class="text-decoration-none w-100 h-100 d-block align-content-center">
+                                                    <div class="inner-diver d-none">
+                                                        <p
+                                                            class="fw-semibold text-center ms-xl-5 mb-xl-5 ps-xl-4 fs-4 mb-0 me-xl-5 lh-1 text-white">
+                                                            Auto Mobile</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-6 px-0 trending-coupon"
+                                                style="height:180px; background: url(https://placeholder.co/200) no-repeat 0% / contain;">
+                                                <a href="#!"
+                                                    class="text-decoration-none w-100 h-100 d-block align-content-center">
+                                                    <div class="inner-diver d-none">
+                                                        <p
+                                                            class="fw-semibold text-center me-xl-5 mb-xl-5 pe-xl-4 fs-4 mb-0 ms-xl-4 lh-1 text-white">
+                                                            Auto Mobile</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 3rdy cards -->
+        <section>
+            <div class="container">
+                <h2 class="h3 py-3 text-capitalize text-center fw-bold text-main mb-0">
+                    Enjoy Lottery Level Savings With On Going Deals
+                </h2>
+                <div class="mt-4 mx-lg-4 px-lg-5">
+                    <div class="row justify-content-center">
+                        <div class="col-4 px-0 px-lg-3">
+                            <a href="#!" class="text-decoration-none">
+                                <div class="shadow row mx-2">
+                                    <div class="col-6 px-0">
+                                        <div>
+                                            <img width="60" height="280" src="images/travel.jpg"
+                                                class="w-100 object-fit-cover bottomcard-img" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 px-0">
+
+                                        <div class="d-flex shadow bottom-card-right flex-column h-100">
+                                            <div class="w-100 h-50">
+                                                <img width="70" height="60" src="images/travel.jpg"
+                                                    class="w-100 h-100 object-fit-cover" alt="">
+                                            </div>
+                                            <div class="w-100 h-50 overflow-hidden">
+                                                <div
+                                                    class="px-1 px-sm-2 py-1 py-sm-2 py-lg-3 bg shadow-sm h-100 d-flex flex-column justify-content-between">
+                                                    <p class="mb-1 text-white lh-sm smaller-custom">Code</p>
+                                                    <p
+                                                        class="mb-1 text-center text-white lh-sm ellipsy fw-semibold smaller-custom">
+                                                        HOT DEAL Get 25% oFF Right Now!</p>
+                                                    <p class="mb-1 text-end text-white lh-sm smaller-custom">2025-12-31
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-4 px-0 px-lg-3">
+                            <a href="#!" class="text-decoration-none">
+                                <div class="shadow row mx-2">
+                                    <div class="col-6 px-0">
+                                        <div>
+                                            <img width="60" height="280" src="images/travel.jpg"
+                                                class="w-100 object-fit-cover bottomcard-img" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 px-0">
+
+                                        <div class="d-flex shadow bottom-card-right flex-column h-100">
+                                            <div class="w-100 h-50">
+                                                <img width="70" height="60" src="images/travel.jpg"
+                                                    class="w-100 h-100 object-fit-cover" alt="">
+                                            </div>
+                                            <div class="w-100 h-50 overflow-hidden">
+                                                <div
+                                                    class="px-1 px-sm-2 py-1 py-sm-2 py-lg-3 bg shadow-sm h-100 d-flex flex-column justify-content-between">
+                                                    <p class="mb-1 text-white lh-sm smaller-custom">Code</p>
+                                                    <p
+                                                        class="mb-1 text-center text-white lh-sm ellipsy fw-semibold smaller-custom">
+                                                        HOT DEAL Get 25% oFF Right Now!</p>
+                                                    <p class="mb-1 text-end text-white lh-sm smaller-custom">2025-12-31
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-4 px-0 px-lg-3">
+                            <a href="#!" class="text-decoration-none">
+                                <div class="shadow row mx-2">
+                                    <div class="col-6 px-0">
+                                        <div>
+                                            <img width="60" height="280" src="images/travel.jpg"
+                                                class="w-100 object-fit-cover bottomcard-img" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 px-0">
+
+                                        <div class="d-flex shadow bottom-card-right flex-column h-100">
+                                            <div class="w-100 h-50">
+                                                <img width="70" height="60" src="images/travel.jpg"
+                                                    class="w-100 h-100 object-fit-cover" alt="">
+                                            </div>
+                                            <div class="w-100 h-50 overflow-hidden">
+                                                <div
+                                                    class="px-1 px-sm-2 py-1 py-sm-2 py-lg-3 bg shadow-sm h-100 d-flex flex-column justify-content-between">
+                                                    <p class="mb-1 text-white lh-sm smaller-custom">Code</p>
+                                                    <p
+                                                        class="mb-1 text-center text-white lh-sm ellipsy fw-semibold smaller-custom">
+                                                        HOT DEAL Get 25% oFF Right Now!</p>
+                                                    <p class="mb-1 text-end text-white lh-sm smaller-custom">2025-12-31
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- 3rdy cards -->
+        <!-- 3rdy cards -->
+        <section>
+            <div class="container">
+                <h2 class="h3 py-3 text-capitalize text-center fw-bold text-main mb-0 mt-3 mt-md-4">
+                    Enjoy Lottery Level Savings With On Going Deals
+                </h2>
+                <div class="mt-4 mx-lg-4 px-lg-5">
+                    <div class="row justify-content-center">
+                        <div class="col-4 px-0 px-lg-3">
+                            <a href="#!" class="text-decoration-none">
+                                <div class="shadow row mx-2">
+                                    <div class="col-6 px-0">
+                                        <div>
+                                            <img width="60" height="280" src="images/travel.jpg"
+                                                class="w-100 object-fit-cover bottomcard-img" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 px-0">
+
+                                        <div class="d-flex shadow bottom-card-right flex-column h-100">
+                                            <div class="w-100 h-50">
+                                                <img width="70" height="60" src="images/travel.jpg"
+                                                    class="w-100 h-100 object-fit-cover" alt="">
+                                            </div>
+                                            <div class="w-100 h-50 overflow-hidden">
+                                                <div
+                                                    class="px-1 px-sm-2 py-1 py-sm-2 py-lg-3 bg shadow-sm h-100 d-flex flex-column justify-content-between">
+                                                    <p class="mb-1 text-white lh-sm smaller-custom">Code</p>
+                                                    <p
+                                                        class="mb-1 text-center text-white lh-sm ellipsy fw-semibold smaller-custom">
+                                                        HOT DEAL Get 25% oFF Right Now!</p>
+                                                    <p class="mb-1 text-end text-white lh-sm smaller-custom">2025-12-31
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-4 px-0 px-lg-3">
+                            <a href="#!" class="text-decoration-none">
+                                <div class="shadow row mx-2">
+                                    <div class="col-6 px-0">
+                                        <div>
+                                            <img width="60" height="280" src="images/travel.jpg"
+                                                class="w-100 object-fit-cover bottomcard-img" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 px-0">
+
+                                        <div class="d-flex shadow bottom-card-right flex-column h-100">
+                                            <div class="w-100 h-50">
+                                                <img width="70" height="60" src="images/travel.jpg"
+                                                    class="w-100 h-100 object-fit-cover" alt="">
+                                            </div>
+                                            <div class="w-100 h-50 overflow-hidden">
+                                                <div
+                                                    class="px-1 px-sm-2 py-1 py-sm-2 py-lg-3 bg shadow-sm h-100 d-flex flex-column justify-content-between">
+                                                    <p class="mb-1 text-white lh-sm smaller-custom">Code</p>
+                                                    <p
+                                                        class="mb-1 text-center text-white lh-sm ellipsy fw-semibold smaller-custom">
+                                                        HOT DEAL Get 25% oFF Right Now!</p>
+                                                    <p class="mb-1 text-end text-white lh-sm smaller-custom">2025-12-31
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-4 px-0 px-lg-3">
+                            <a href="#!" class="text-decoration-none">
+                                <div class="shadow row mx-2">
+                                    <div class="col-6 px-0">
+                                        <div>
+                                            <img width="60" height="280" src="images/travel.jpg"
+                                                class="w-100 object-fit-cover bottomcard-img" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 px-0">
+
+                                        <div class="d-flex shadow bottom-card-right flex-column h-100">
+                                            <div class="w-100 h-50">
+                                                <img width="70" height="60" src="images/travel.jpg"
+                                                    class="w-100 h-100 object-fit-cover" alt="">
+                                            </div>
+                                            <div class="w-100 h-50 overflow-hidden">
+                                                <div
+                                                    class="px-1 px-sm-2 py-1 py-sm-2 py-lg-3 bg shadow-sm h-100 d-flex flex-column justify-content-between">
+                                                    <p class="mb-1 text-white lh-sm smaller-custom">Code</p>
+                                                    <p
+                                                        class="mb-1 text-center text-white lh-sm ellipsy fw-semibold smaller-custom">
+                                                        HOT DEAL Get 25% oFF Right Now!</p>
+                                                    <p class="mb-1 text-end text-white lh-sm smaller-custom">2025-12-31
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- 3rdy cards -->
+        <!-- stoty cards -->
+        <section>
+            <div class="container">
+                <h2 class="h3 py-3 text-capitalize text-center fw-bold text-main mb-0 mt-3 mt-md-4">
+                    Discover best Picks at your fav stores
+                </h2>
+                <div class="row mx-lg-4 px-4 gy-4">
+                    <div class="col-4 col-lg-2 px-0">
+                        <div class="borderly-img">
+                            <a href="#!" class="text-decoration-none">
+                                <img src="images/slider-3.jpg" alt="" height="180" width="185"
+                                    class="object-fit-cover border story-coupon-img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4 col-lg-2 px-0">
+                        <div class="borderly-img">
+                            <a href="#!" class="text-decoration-none">
+                                <img src="images/slider-3.jpg" alt="" height="180" width="185"
+                                    class="object-fit-cover border story-coupon-img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4 col-lg-2 px-0">
+                        <div class="borderly-img">
+                            <a href="#!" class="text-decoration-none">
+                                <img src="images/slider-3.jpg" alt="" height="180" width="185"
+                                    class="object-fit-cover border story-coupon-img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4 col-lg-2 px-0">
+                        <div class="borderly-img">
+                            <a href="#!" class="text-decoration-none">
+                                <img src="images/slider-3.jpg" alt="" height="180" width="185"
+                                    class="object-fit-cover border story-coupon-img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4 col-lg-2 px-0">
+                        <div class="borderly-img">
+                            <a href="#!" class="text-decoration-none">
+                                <img src="images/slider-3.jpg" alt="" height="180" width="185"
+                                    class="object-fit-cover border story-coupon-img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4 col-lg-2 px-0">
+                        <div class="">
+                            <img src="images/slider-3.jpg" alt="" height="180" width="185"
+                                class="object-fit-cover border story-coupon-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- stoty cards -->
+
+    </main>
+    <footer>
+
+        <div class="mt-3  w-100 h-100 footer-img"
+            style="background-image: url('images/footer-img.jpg'); background-size: cover; background-position: center;">
+            <div style="background-color: rgba(0, 0, 0, 0.5); padding: 20px 0;">
+                <div class="container">
+                    <div class="col-lg-12 text-center text-white">
+                        <h3 class="text-uppercase pt-3 fw-bold fs-1">newsletter</h3>
+                        <p class="text-uppercase pt-3 pb-2">be the first to know about exclusive offers, product
+                            launches, and insider tips, subscribe now and stay ahead</p>
+                        <div class="d-lg-flex d-block  gap-3 justify-content-center pb-4">
+                            <form class="w-100">
+                                <div class="d-lg-flex gap-3 d-block justify-content-center">
+
+                                    <input type="text"
+                                        class=" w-50 footer-input p-2 my-2 my-lg-0 rounded-3 border-0 px-3"
+                                        placeholder="Enter Your Email Address Here">
+                                    <button
+                                        class="py-1 border-0 px-3 text-uppercase rounded-3 fw-bold fs-5 bg text-white">subscribe</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bg pt-3 pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 mt-4 d-flex justify-content-center">
+                        <a href="">
+                            <img src="images/footer-logo.PNG" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-lg-6 order-last">
+                        <div class="text-center text-white">
+                            <h3 class="text-capitalize">Let's Socialize!</h3>
+                            <ul class="list-unstyled  d-flex justify-content-center">
+                                <li><a href=""><img src="images/insta.PNG" alt="" class="img-fluid w-100"></a></li>
+                                <li><a href=""><img src="images/facebook.PNG" alt="" class="img-fluid w-100"></a>
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled  d-flex justify-content-center gap-3">
+                                <li><a href="" class="text-decoration-none text-white small">About</a></li>
+                                <li><a href="" class="text-decoration-none text-white small">About</a></li>
+                                <li><a href="" class="text-decoration-none text-white small">About</a></li>
+                                <li><a href="" class="text-decoration-none text-white small">About</a></li>
+                                <li><a href="" class="text-decoration-none text-white small">About</a></li>
+                                <li><a href="" class="text-decoration-none text-white small">About</a></li>
+                            </ul>
+                            <hr class="text-white">
+                            <p class="pb-0">CopyRight 2024, All Rights and Reserved</p>
+                            <p class="pb-0">Disclosure we may earn a commission if you use our Links/Coupons/Vouchers/Promos</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3  d-flex order-2 order-lg-last">
+                        <div class="text-Left text-white fs-6 ps-3 ">
+                            <p class="border-start border-3 border-white ps-3">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Dolorum perspiciatis quis,
+                                nemo laboriosam consectetur molestiae debitis vero ab tempore velit quo explicabo
+                                eum fugiat rerum quibusdam, numquam ipsa quia alias?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+        const btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+btnScrollToTop.addEventListener("click", function(){
+  $("html, body").animate({ scrollTop:0 }, "slow");
+})
+   
+    </script>
+    <script>
+        new Splide('.splide', {
+            classes: {
+                pagination: 'splide__pagination start-100',
+            },
+            type: 'loop',
+            arrows: 0,
+            wheel: true,
+            releaseWheel: true,
+            height: 560,
+            direction: 'ttb',
+            paginationDirection: 'ttb',
+            breakpoints: {
+                1400: {
+                    height: 480,
+                },
+                768: {
+                    pagination: 0,
+                    height: 333,
+                },
+                575: {
+                    pagination: 0,
+                    height: 200,
+                }
+
+            }
+        }).mount();
+        const trendings = document.querySelectorAll('.trending-coupon');
+
+        trendings.forEach(trending => {
+            trending.addEventListener('mouseover', () => {
+                trendings.forEach(item => {
+                    if (item !== trending) {
+                        item.classList.add('blurry');
+                    }
+                });
+                const innerDiver = trending.querySelector('.inner-diver');
+                if (innerDiver) {
+                    innerDiver.classList.remove('d-none');
+                }
+            });
+
+            trending.addEventListener('mouseout', () => {
+                trendings.forEach(item => {
+                    item.classList.remove('blurry');
+                });
+                const innerDiver = trending.querySelector('.inner-diver');
+                if (innerDiver) {
+                    innerDiver.classList.add('d-none');
+                }
+            });
+        });
+
+ </script>
+
+
+</body>
+
+</html>
