@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-1/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Modal</title>
+</head>
+
+<body>
+   <!-- Button trigger modal -->
+   <button type="button" class="btn btn-primary btn-lg  subs_modal CustomModalSubs" data-bs-toggle="modal" data-bs-target="#CustomSubsModal">
+</button>
+
+<div class="modal fade coupon-modal " id="CustomSubsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-label="name" style="z-index: 9999999;">
+    <div class="  modal-dialog modal-lg modal-dialog-centered">
+        <div class=" modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="bg-black col-lg-5 signup-form">
+                        <div class="p-4 mt-4">
+                            <h4 class="  d-flex fs-5 d-flex justify-content-center text-white text-center">
+                                STAY IN THE LOOP WITH THEDIGITALSPARKS!</h4>
+                            <span class="d-flex justify-content-center">
+                                <img src="images/logo.png" alt="" class="img-fluid w-100" style="max-width: 270px;">
+
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class=" col-lg-7">
+
+                        <button
+                        type="button"
+                        class="btn-close subs_modal_close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                        <div class="p-4">
+                            <h4
+                                class="  d-flex fs-5 d-flex justify-content-center text-black fw-bold p-3 mt-5 text-center">
+                                SUBSCRIBE NOW FOR TOP NOTCH SHOPPING ADVICE</h4>
+                                <hr>
+                            <span class="d-flex justify-content-center mt-4">
+                                <input type="email" class="form-control subs_form border-0"
+                                    placeholder="Enter Your Email" aria-label="Username"
+                                    aria-describedby="basic-addon1" />
+                            </span>
+                            <div class="d-flex justify-content-center">
+                                <a class="impressum_btn mt-3 rounded-1" href="#" type="btn">Sign Up</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-----------------------------cookies-modal--------------------------------------------------------->
+  <div class="card cookie-alert position-fixed border bg-white rounded-3 p-1 m-2 end-0 bottom-0">
+    <div class="card-body">
+      <p class="card-text">&#x1F36A; We use cookies to ensure our website functions properly and to provide you with a personalized experience.</p>
+      <div class="btn-toolbar justify-content-end">
+        <button onclick="acceptCookies(0)" class="btn accept-cookies">Reject</button>
+        <button onclick="acceptCookies(1)" class="btn btn-success accept-cookies">Accept</button>
+      </div>
+    </div>
+  </div>
+    <div class="gtranslate_wrapper"></div>
+    <script src="js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ 
+    <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
