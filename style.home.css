@@ -18,11 +18,7 @@ position: relative;
   margin-top: -20px;
   width: 100%;
 }
-.navbar .navbar-brand {
-	padding-left: 0;
-	font-size: 20px;
-	padding-right: 50px;
-}
+
 .navbar .navbar-brand b {
 	font-weight: bold;
 	color: #eb5844;		
