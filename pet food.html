@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet food</title>
+
+    <!-- font awesome cdn link  -->
+    <script src="https://kit.fontawesome.com/fdabc2022a.js" crossorigin="anonymous"></script>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loginstyle.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+<header>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <a href="index.html" class="logo"><img src="images/logo.png" class="logo" alt=""></a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#category">category</a>
+        <a href="#featured">featured</a>
+        <a href="#product">products</a>
+        <a href="#offer">offer</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <div class="icons">
+        <!-- <i class="fas fa-search" id="search-icon"></i> -->
+        <a href="#" class="fas fa-shopping-cart" id="cart-icon"></a>
+
+        <!-- Cart -->
+        <div class="cart">
+            <h2 class="cart-title">your cart</h2>
+            <div class="cart-content">
+                <div class="cart-box">
+                    <img src="images/p1.webp" alt="" class="cart-img">
+                    <div class="detail-box">
+                        <div class="cart-product-tittle">healthy pets food</div>
+                        <div class="cart-price">$10</div>
+                        <input type="number" value="1" class="cart-quantity">
+                    </div>
+                    <i class="fa-solid fa-trash cart-remove"></i>
+                </div>
+            </div>
+            <div class="total">
+                <div class="total-tittle">total</div>
+                <div class="total-price">$0</div>
+            </div>
+            <center><button type="button" class="btn buy">Buy now</button></center>
+            <i class="fa-solid fa-xmark" id="close-cart"></i>
+        </div>       
+    <a href="#" class="fas fa-user" onclick="openForm()"></a>
+    <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+
+  <label for="emailaddress">Email address</label>
+          <input type="text" placeholder="Enter email">
+          
+          <label for="password">Password</label>
+          <input type="password" placeholder="Password">
+        
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        <p>Don't have an account? <a href="/signup.html">Sign Up</a></p>
+
+    
+    </div>
+    </div>
+
+    <form action="" id="search-box" >
+        <input type="search" id="search" placeholder="search here">
+        <label for="search" class="fas fa-search"></label>
+    </form>
+
+</header>
+    
+<!-- header section ends -->
+
+<!-- product section start -->
+<div class="heading">
+    <h1>Upto <span class="text">70%</span> off</h1>
+    <p> <a href="index.html">home >></a>Pet food</p>
+</div>
+
+
+<section class="product" id="product">
+
+    <h1 class="heading"> <i class="fas fa-paw"></i>Pet food<i class="fas fa-paw"></i> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/sp1.jpg" alt="" class="productimg">
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="product-tittle">Timothy based</h3>
+                <div class="price"> $10 <span>19.50</span> </div>
+                <a href="#" class="btn add-cart">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/sp2.jpg" alt="" class="productimg">
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="product-tittle">Rabbit feed</h3>
+                <div class="price"> $9 <span>18.50</span> </div>
+                <a href="#" class="btn add-cart">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/sp3.jpg" alt="" class="productimg">
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="product-tittle">Nature snak</h3>
+                <div class="price"> $10 <span>19.50</span> </div>
+                <a href="#" class="btn add-cart">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/sp4.jpg" alt="" class="productimg">
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="product-tittle">GRO Premium</h3>
+                <div class="price"> $11 <span>20.50</span> </div>
+                <a href="#" class="btn add-cart">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/sp5.jpeg" alt="" class="productimg">
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="product-tittle">Harringtons</h3>
+                <div class="price"> $7 <span>17.50</span> </div>
+                <a href="#" class="btn add-cart">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/sp6.jpg" alt="" class="productimg">
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="product-tittle">Botanical</h3>
+                <div class="price"> $5 <span>11.50</span> </div>
+                <a href="#" class="btn add-cart ">add to cart</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/sp7.png" alt="" class="productimg">
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="product-tittle">Wiskas Adult 1+</h3>
+                <div class="price"> $11 <span>19.50</span> </div>
+                <a href="#" class="btn add-cart">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/sp8.png" alt="" class="productimg">
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="product-tittle">Wiskas 1+</h3>
+                <div class="price"> $9 <span>18.50</span> </div>
+                <a href="#" class="btn add-cart">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/sp9.jpg" alt="" class="productimg">
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="product-tittle">Me-O</h3>
+                <div class="price"> $9 <span>19.50</span> </div>
+                <a href="#" class="btn add-cart">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/sp10.jpg" alt="" class="productimg">
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="product-tittle">9Lives</h3>
+                <div class="price"> $13 <span>20.50</span> </div>
+                <a href="#" class="btn add-cart">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/sp11.jpg" alt="" class="productimg">
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="product-tittle">Proplan</h3>
+                <div class="price"> $10 <span>17.50</span> </div>
+                <a href="#" class="btn add-cart">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/sp12.jpg" alt="" class="productimg">
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="product-tittle">Royal canin</h3>
+                <div class="price"> $6 <span>11.50</span> </div>
+                <a href="#" class="btn add-cart ">add to cart</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/sp13.jpg" alt="" class="productimg">
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="product-tittle">zupreem</h3>
+                <div class="price"> $7 <span>19.50</span> </div>
+                <a href="#" class="btn add-cart">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/sp14.jpg" alt="" class="productimg">
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="product-tittle">NutriBerries</h3>
+                <div class="price"> $12 <span>21.50</span> </div>
+                <a href="#" class="btn add-cart">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/sp15.jpg" alt="" class="productimg">
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="product-tittle">Fruit Blend</h3>
+                <div class="price"> $10 <span>19.50</span> </div>
+                <a href="#" class="btn add-cart">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/sp16.png" alt="" class="productimg">
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="product-tittle">Nutri-Berries</h3>
+                <div class="price"> $13 <span>20.50</span> </div>
+                <a href="#" class="btn add-cart">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/sp17.jpg" alt="" class="productimg">
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="product-tittle">Exact</h3>
+                <div class="price"> $8 <span>17.50</span> </div>
+                <a href="#" class="btn add-cart">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/sp18.jpeg" alt="" class="productimg">
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="product-tittle">ParaLaros</h3>
+                <div class="price"> $5 <span>11.50</span> </div>
+                <a href="#" class="btn add-cart ">add to cart</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/sp19.jpg" alt="" class="productimg">
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="product-tittle">NaturCrog</h3>
+                <div class="price"> $13 <span>23.50</span> </div>
+                <a href="#" class="btn add-cart">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/sp20.jpg" alt="" class="productimg">
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="product-tittle">Paidegree</h3>
+                <div class="price"> $9 <span>19.50</span> </div>
+                <a href="#" class="btn add-cart">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/sp21.jpg" alt="" class="productimg">
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="product-tittle">All Puppies</h3>
+                <div class="price"> $11 <span>20.50</span> </div>
+                <a href="#" class="btn add-cart">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/sp22.jpeg" alt="" class="productimg">
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="product-tittle">Nuitrition Milk</h3>
+                <div class="price"> $15 <span>28.50</span> </div>
+                <a href="#" class="btn add-cart">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/sp23.jpg" alt="" class="productimg">
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="product-tittle">Cesar</h3>
+                <div class="price"> $9 <span>19.50</span> </div>
+                <a href="#" class="btn add-cart">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/sp24.jpg" alt="" class="productimg">
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="product-tittle">IAMS</h3>
+                <div class="price"> $12 <span>19.50</span> </div>
+                <a href="#" class="btn add-cart ">add to cart</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- product section end -->
+
+
+<!-- footer section  -->
+
+<section class="footer">
+    
+    <div class="share">
+        <a href="#" class="btn">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="#" class="btn">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="btn">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="btn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="#" class="btn">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+
+    <h1 class="credit"> created by <span> saba maqsood </span> | all rights reserved! </h1>
+
+</section>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">🢁</button>
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+<!-- custom js file link  -->
+<script src="app.js"></script>
+<script src="login.js"></script>
+</body>
+</html>
+    

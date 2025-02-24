@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiha tzu</title>
+
+    <!-- font awesome cdn link  -->
+    <script src="https://kit.fontawesome.com/fdabc2022a.js" crossorigin="anonymous"></script>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loginstyle.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    body {
+        line-height: 1.5;
+    }
+    
+    .card-wrapper {
+        max-width: 950px;
+        margin: 0 auto;
+    }
+    
+    img {
+        width: 100%;
+        display: block;
+    }
+    
+    .img-display {
+        overflow: hidden;
+    }
+    
+    .img-showcase {
+        display: flex;
+        width: 100%;
+        transition: all 0.5s ease;
+    }
+    
+    .img-showcase img {
+        min-width: 100%;
+    }
+    
+    .img-select {
+        display: flex;
+    }
+    
+    .img-item {
+        margin: 0.3rem;
+    }
+    
+    .img-item:nth-child(1),
+    .img-item:nth-child(2),
+    .img-item:nth-child(3) {
+        margin-right: 0;
+    }
+    
+    .img-item:hover {
+        opacity: 0.8;
+    }
+    
+    .product-content {
+        padding: 2rem 1rem;
+        height: 500px;
+        width: 500px;
+    }
+    
+    .product-title {
+        font-size: 5rem;
+        text-transform: capitalize;
+        font-weight: 700;
+        position: relative;
+        color: var(--yellow);
+        margin: 1rem 0;
+    }
+    
+    .product-title::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 4px;
+        width: 80px;
+        background: #12263a;
+    }
+    
+    .product-link {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 2rem;
+        display: inline-block;
+        margin-bottom: 0.5rem;
+        background: var(--yellow);
+        color: black;
+        padding: 0 1rem;
+        transition: all 0.5s ease;
+    }
+    
+    .product-link:hover {
+        opacity: 0.9;
+    }
+    
+    .product-rating {
+        color:var(--yellow);
+    }
+    
+    .product-rating span {
+        font-weight: 600;
+        color: #252525;
+    }
+    
+    .product-price {
+        margin: 1rem 0;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    
+    .product-price span {
+        font-weight: 400;
+    }
+    
+    .last-price span {
+        color: var(--yellow);
+        text-decoration: line-through;
+    }
+    
+    .new-price span {
+        color: black;
+        margin-top: 2rem;
+    }
+    
+    .product-detail h2 {
+        text-transform: capitalize;
+        color: #12263a;
+        padding-bottom: 0.6rem;
+    }
+    
+    .product-detail p {
+        font-size: 1.5rem;
+        padding: 0.3rem;
+        opacity: 0.8;
+    }
+    
+    .product-detail ul {
+        margin: 1rem 0;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    
+    .product-detail {
+        margin-top: 1rem;
+    }
+    
+    .product-detail ul li {
+        margin: 0;
+        list-style: none;
+        background: url(shoes_images/checked.png) left center no-repeat;
+        background-size: 18px;
+        padding-left: 1.7rem;
+        margin: 0.4rem 0;
+        font-weight: 600;
+        opacity: 0.9;
+        margin-top: 2rem;
+    }
+    
+    .product-detail ul li span {
+        font-weight: 400;
+    }
+    
+    .purchase-info {
+        margin: 2rem 0;
+    }
+    
+    .purchase-info .btn {
+        border: 1.5px solid #ddd;
+        border-radius: 25px;
+        text-align: center;
+        padding: 0.45rem 0.8rem;
+        outline: 0;
+        margin-right: 0.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .purchase-info input {
+        border: 2px solid rgb(141, 141, 141);
+        text-align: center;
+        padding: 0.8rem 0.8rem;
+        outline: 0;
+        margin-right: 0.2rem;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        border-radius: 25px;
+    }
+    
+    .purchase-info input {
+        width: 260px;
+    }
+    
+    .purchase-info .btn {
+        cursor: pointer;
+        color: #fff;
+    }
+    
+    .purchase-info .btn:first-of-type {
+        background: var(--yellow);
+    }
+    
+    .purchase-info .btn:last-of-type {
+        background: var(--yellow);
+    }
+    
+    .purchase-info .btn:hover {
+        opacity: 0.9;
+    }
+    
+    .social-links {
+        display: flex;
+        align-items: center;
+    }
+    
+    .social-links a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        color: #000;
+        border: 1px solid #000;
+        margin: 0 0.2rem;
+        border-radius: 50%;
+        text-decoration: none;
+        font-size: 0.8rem;
+        transition: all 0.5s ease;
+    }
+    
+    .social-links a:hover {
+        background: #000;
+        border-color: transparent;
+        color: #fff;
+    }
+    
+    @media screen and (min-width: 992px) {
+        .card {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1.5rem;
+        }
+        .card-wrapper {
+            height: 75vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .product-imgs {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .product-content {
+            padding-top: 0;
+        }
+    }
+    /**
+ * Tabs
+ */
+    
+    .tabs {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .tabs label {
+        order: 1;
+        display: block;
+        padding: 1rem 2rem;
+        margin-right: 0.2rem;
+        cursor: pointer;
+        background: var(--yellow);
+        font-weight: bold;
+        transition: ease 0.2s;
+    }
+    
+    .tabs .tab {
+        order: 99;
+        flex-grow: 1;
+        width: 100%;
+        display: none;
+        padding: 1rem;
+        background: #fff;
+    }
+    
+    .tabs input[type="radio"] {
+        display: none;
+    }
+    
+    .tabs input[type="radio"]:checked+label {
+        background:black;    
+        color: #fff;
+    }
+    
+    .tabs input[type="radio"]:checked+label+.tab {
+        display: block;
+    }
+    
+    @media (max-width: 45em) {
+        .tabs .tab,
+        .tabs label {
+            order: initial;
+        }
+        .tabs label {
+            width: 100%;
+            margin-right: 0;
+            margin-top: 0.2rem;
+        }
+    }
+</style>
+
+
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <a href="index.html" class="logo"><img src="images/logo.png" class="logo" alt=""></a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#category">category</a>
+        <a href="#featured">featured</a>
+        <a href="#product">products</a>
+        <a href="#offer">offer</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <div class="icons">
+        <!-- <i class="fas fa-search" id="search-icon"></i> -->
+        <a href="#" class="fas fa-shopping-cart" id="cart-icon"></a>
+
+        <!-- Cart -->
+        <div class="cart">
+            <h2 class="cart-title">your cart</h2>
+            <div class="cart-content">
+                <div class="cart-box">
+                    <img src="images/p1.webp" alt="" class="cart-img">
+                    <div class="detail-box">
+                        <div class="cart-product-tittle">healthy pets food</div>
+                        <div class="cart-price">$10</div>
+                        <input type="number" value="1" class="cart-quantity">
+                    </div>
+                    <i class="fa-solid fa-trash cart-remove"></i>
+                </div>
+            </div>
+            <div class="total">
+                <div class="total-tittle">total</div>
+                <div class="total-price">$0</div>
+            </div>
+            <center><button type="button" class="btn buy">Buy now</button></center>
+            <i class="fa-solid fa-xmark" id="close-cart"></i>
+        </div>       
+    <a href="#" class="fas fa-user" onclick="openForm()"></a>
+    <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+
+  <label for="emailaddress">Email address</label>
+          <input type="text" placeholder="Enter email">
+          
+          <label for="password">Password</label>
+          <input type="password" placeholder="Password">
+        
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        <p>Don't have an account? <a href="/signup.html">Sign Up</a></p>
+
+    
+    </div>
+    </div>
+
+    <form action="" id="search-box" >
+        <input type="search" id="search" placeholder="search here">
+        <label for="search" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- category section start -->
+<div class="heading">
+    <h1>buy Now</h1>
+    <p> <a href="index.html">home >></a><a href="Dogs.html">Get your pets >></a>Buy Now</p>
+</div>
+
+
+
+<!-- PRODUCT SECTION START -->
+<section class="products">
+    <h1 class="title">Buy <span>now</span> <a href="Dogs.html">view all >></a> </h1>
+
+
+    <div class="card-wrapper">
+        <div class="card">
+            <!-- card left -->
+            <div class="product-imgs">
+                <div class="img-display">
+                    <div class="img-showcase">
+                        <img src="images/shih tzu 1.jpeg">
+                        <img src="images/shih tzu 2.jpg">
+                        <img src="images/shih tzu 3.jpg">
+                        <img src="images/shih tzu 4.jpg">
+                    </div>
+                </div>
+                <div class="img-select">
+                    <div class="img-item">
+                        <a href="#" data-id="1">
+                            <img src="images/shih tzu 1.jpeg">
+                        </a>
+                    </div>
+                    <div class="img-item">
+                        <a href="#" data-id="2">
+                            <img src="images/shih tzu 2.jpg">
+                        </a>
+                    </div>
+                    <div class="img-item">
+                        <a href="#" data-id="3">
+                            <img src="images/shih tzu 3.jpg">
+                        </a>
+                    </div>
+                    <div class="img-item">
+                        <a href="#" data-id="4">
+                            <img src="images/shih tzu 4.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- card right -->
+            <div class="product-content">
+                <h2 class="product-title">shih tzu</h2>
+                <a href="index.html" class="product-link">View More pets</a>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>4.7(21)</span>
+                </div>
+
+                <div class="product-detail">
+                    <h2>Prices:$900</h2>
+                    <ul>
+                        <li>Breed size: <span>medium (30-66 lbs.)</span></li>
+                        <li>Age: <span>10-18 y/o</span></li>
+                        <li>Height: <span>9-10.5 ich</span></li>
+                        <li>Weight: <span>9-16 pounds</span></li>
+                    </ul>
+
+                </div>
+
+                <div class="purchase-info">
+                    <input type="number" min="0" value="1">
+                    <div>
+
+                        <button type="button" class="btn">
+                            Add to Cart <i class="fas fa-shopping-cart"></i>
+                        </button>
+                        <button type="button" class="btn">Add to Wishlist</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="Tabs">
+    <div class="tabs">
+        <input type="radio" name="tabs" id="tabone" checked="checked">
+        <label for="tabone">Description</label>
+        <div class="tab">
+            <h1>Shih tzu</h1>
+            <p>The shih tzu is a sturdy toy breed, weighing anywhere between 9–16 pounds. They are best known for their long, silky, luxurious double coat, which can be found in 14 different colors—including black, black and white, gray and white, and red and white—and three different markings. Most shih tzus also have a small white spot on their foreheads, called the "Star of Buddha".</p>
+            
+        </div>
+
+        <input type="radio" name="tabs" id="tabtwo">
+        <label for="tabtwo">Breeds</label>
+        <div class="tab">
+            <h1>Breeds</h1>
+            <p>Shih tzu
+            </p>
+        </div>
+
+        <input type="radio" name="tabs" id="tabthree">
+        <label for="tabthree">Reviews</label>
+        <div class="tab">
+            <div class="review">
+
+                <div class="box">
+                    <div class="user">
+                        <img src="images/pic-1.jpg" alt="">
+                        <div class="info">
+                            <h3>Noman Ali</h3>
+                            <span>happy client</span>
+                        </div>
+                    </div>
+                    <p>Holly was really nice to our cat Fellini and took care of her very well. Sure we will hire her next time!! :D
+                    </p>
+                </div>
+            </div>
+            <div class="review">
+
+                <div class="box">
+                    <div class="user">
+                        <img src="images/pic-2.jpg" alt="">
+                        <div class="info">
+                            <h3>Usman mumtaz</h3>
+                            <span>happy client</span>
+                        </div>
+                    </div>
+                <p>Jennie is great! Had brought my dog over for a daycare and Jennie gave frequent updates about my dog. She is also patient and tries to understand my dog and her needs prior to us leaving in her care. Thanks Jennie!
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ 
+
+<!-- footer section  -->
+
+<section class="footer">
+    
+    <div class="share">
+        <a href="#" class="btn">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="#" class="btn">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="btn">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="btn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="#" class="btn">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+
+    <h1 class="credit"> created by <span> Saba Maqsood </span> | all rights reserved! </h1>
+
+</section>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">🢁</button>
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="app.js"></script>
+<script src="login.js"></script>
+
+
+
+</body>
+<script>
+    const imgs = document.querySelectorAll('.img-select a');
+    const imgBtns = [...imgs];
+    let imgId = 1;
+
+    imgBtns.forEach((imgItem) => {
+        imgItem.addEventListener('click', (event) => {
+            event.preventDefault();
+            imgId = imgItem.dataset.id;
+            slideImage();
+        });
+    });
+
+    function slideImage() {
+        const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+
+        document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+    }
+
+    window.addEventListener('resize', slideImage);
+</script>
+
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>category</title>
+      <!-- font awesome cdn link  -->
+      <script src="https://kit.fontawesome.com/fdabc2022a.js" crossorigin="anonymous"></script>
+
+      <!-- custom css file link  -->
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="loginstyle.css">
+
+      <!-- favicon -->
+      <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+</head>
+<body>
+       
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <a href="index.html" class="logo"><img src="images/logo.png" class="logo" alt=""></a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#category">category</a>
+        <a href="#featured">featured</a>
+        <a href="#product">products</a>
+        <a href="#offer">offer</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <div class="icons">
+        <!-- <i class="fas fa-search" id="search-icon"></i> -->
+        <a href="#" class="fas fa-shopping-cart" id="cart-icon"></a>
+
+        <!-- Cart -->
+        <div class="cart">
+            <h2 class="cart-title">your cart</h2>
+            <div class="cart-content">
+                <div class="cart-box">
+                    <img src="images/p1.webp" alt="" class="cart-img">
+                    <div class="detail-box">
+                        <div class="cart-product-tittle">healthy pets food</div>
+                        <div class="cart-price">$10</div>
+                        <input type="number" value="1" class="cart-quantity">
+                    </div>
+                    <i class="fa-solid fa-trash cart-remove"></i>
+                </div>
+            </div>
+            <div class="total">
+                <div class="total-tittle">total</div>
+                <div class="total-price">$0</div>
+            </div>
+            <center><button type="button" class="btn buy">Buy now</button></center>
+            <i class="fa-solid fa-xmark" id="close-cart"></i>
+        </div>       
+    <a href="#" class="fas fa-user" onclick="openForm()"></a>
+    <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+
+  <label for="emailaddress">Email address</label>
+          <input type="text" placeholder="Enter email">
+          
+          <label for="password">Password</label>
+          <input type="password" placeholder="Password">
+        
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        <p>Don't have an account? <a href="/signup.html">Sign Up</a></p>
+
+    
+    </div>
+    </div>
+
+    <form action="" id="search-box" >
+        <input type="search" id="search" placeholder="search here">
+        <label for="search" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+
+<!-- category section start-->
+
+<div class="heading">
+    <h1>Get your pets</h1>
+    <p> <a href="index.html">home >></a>Get your pets</p>
+</div>
+
+<section class="products">
+
+    <h1 class="title"> Get your <span>Pets</span> <a href="#"></a> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/Holland Lop.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3><a style="color: black;" href="Hollandlop.html">Holland Lop</a></h3>
+                <div class="price">Kit Prices:$300 t0 $600</div>
+                <div class="price">Adult Prices:$400 t0 $1000</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/polish rabbit.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3><a style="color: black;" href="polishrabbit.html">Polish</a></h3>
+                <div class="price">Kit Prices:$300 t0 $700</div>
+                <div class="price">Adult Prices:$800 t0 $1100</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/Satin Rabbit.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3><a style="color: black;" href="Satinrabbit.html">Satin</a></h3>
+                <div class="price">Kit Prices:$400 t0 $900</div>
+                <div class="price">Adult Prices:$700 t0 $1000</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/pygmy rabbit.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3><a style="color: black;" href="pygymyrabbit.html">Pygmy</a></h3>
+                <div class="price">Kit Prices:$300 t0 $700</div>
+                <div class="price">Adult Prices:$5B t0 $8B</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/Rex rabbit.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3><a style="color: black;" href="Rexrabbit.html">Rex</a></h3>
+                <div class="price">Kit Prices:$900 t0 $1400</div>
+                <div class="price">Adult Prices:$1500 t0 $2500</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+        
+        
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/Amami rabbit.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3><a style="color: black;" href="Amamirabbit.html">Amami</a></h3>
+                <div class="price">Kit Prices:$300 t0 $500</div>
+                <div class="price">Adult Prices:$600 t0 $1300</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+        
+                </div>
+    
+        </section>
+
+<!-- category section end-->
+
+<!-- footer section  -->
+
+<section class="footer">
+    
+    <div class="share">
+        <a href="#" class="btn">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="#" class="btn">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="btn">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="btn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="#" class="btn">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+
+    <h1 class="credit"> created by <span> Saba Maqsood </span> | all rights reserved! </h1>
+
+</section>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">🢁</button>
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="app.js"></script>
+<script src="login.js"></script>
+
+
+    
+</body>
+</html>
