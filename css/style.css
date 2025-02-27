@@ -5,7 +5,11 @@
     --secondaryColor: #d4b37b;
 }
 
-
+.splide img{
+    height: 450px;
+    max-height: 450px;
+ 
+}
 @media (max-width:767px) {
     .search-icon {
         color: #fff !important;
